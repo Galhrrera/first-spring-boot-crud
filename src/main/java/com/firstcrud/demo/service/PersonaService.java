@@ -171,7 +171,8 @@ public class PersonaService implements PersonaRepository{
     @Override
     public <S extends Persona> S save(S entity) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
+        //throw new UnsupportedOperationException("Unimplemented method 'save'");
+        return personaRepository.save(entity);
     }
 
     @Override
