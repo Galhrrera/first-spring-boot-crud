@@ -26,6 +26,9 @@ public class Persona {
     @JoinColumn (name = "estado-id")
     private Estado estado;
 
+    public Persona() {
+
+    }
 
     public Persona(String nombre, String apellido, int edad, Pais pais, Estado estado) {
         this.nombre = nombre;

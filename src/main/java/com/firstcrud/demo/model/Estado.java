@@ -21,6 +21,9 @@ public class Estado {
     @JoinColumn(name = "pais-id")
     private Pais pais;
 
+    public Estado() {
+    }
+
     public Estado(String nombre, Pais pais) {
         this.nombre = nombre;
         this.pais = pais;
