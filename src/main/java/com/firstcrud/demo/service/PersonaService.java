@@ -94,11 +94,7 @@ public class PersonaService implements PersonaRepository{
     public List<Persona> findAll() {
         // TODO Auto-generated method stub
         //throw new UnsupportedOperationException("Unimplemented method 'findAll'");
-        try {
-            return personaRepository.findAll();
-        } catch (Exception e) {
-            
-        }
+        return personaRepository.findAll();
     }
 
     @Override

@@ -91,11 +91,7 @@ public class EstadoService implements EstadoRepository{
     public List<Estado> findAll() {
         // TODO Auto-generated method stub
         //throw new UnsupportedOperationException("Unimplemented method 'findAll'");
-        try {
-            return estadoRepository.findAll();
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+        return estadoRepository.findAll();
     }
 
     @Override

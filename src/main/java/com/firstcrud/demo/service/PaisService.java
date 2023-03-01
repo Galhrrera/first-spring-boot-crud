@@ -91,11 +91,7 @@ public class PaisService implements PaisRepository{
     public List<Pais> findAll() {
         // TODO Auto-generated method stub
         //throw new UnsupportedOperationException("Unimplemented method 'findAll'");
-        try {
-            return pais.findAll();
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+        return pais.findAll();
     }
 
     @Override
