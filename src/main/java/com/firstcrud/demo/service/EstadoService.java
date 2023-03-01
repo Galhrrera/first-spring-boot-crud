@@ -1,5 +1,6 @@
 package com.firstcrud.demo.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
@@ -200,5 +201,16 @@ public class EstadoService implements EstadoRepository{
     public <S extends Estado> Optional<S> findOne(Example<S> example) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findOne'");
+    }
+
+    public List<Estado> findAllByCountry(Long id){
+        List<Estado> estadosDelPais = new ArrayList<>();
+        List<Estado> estados = estadoRepository.findAll();
+        for (Estado e : estados) {
+            if (e.getPais().getId() == id){
+                estadosDelPais.add(e);
+            }
+        }
+        return estadosDelPais;
     }
 }
