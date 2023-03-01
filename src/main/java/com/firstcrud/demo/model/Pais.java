@@ -15,6 +15,9 @@ public class Pais {
     private int id;
     private String nombre;
 
+    public Pais() {
+    }
+
     public Pais(String nombre) {
         this.nombre = nombre;
     }
