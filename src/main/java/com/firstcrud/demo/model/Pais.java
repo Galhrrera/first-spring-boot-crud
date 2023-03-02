@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "pais", schema = "spring-boot")
+@Table(name = "paises", schema = "spring-boot")
 public class Pais {
 
     @Id

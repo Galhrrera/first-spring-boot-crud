@@ -9,7 +9,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "estado", schema = "spring-boot")
+@Table(name = "estados", schema = "spring-boot")
 public class Estado {
 
     @Id
