@@ -13,7 +13,7 @@ import com.firstcrud.demo.model.Estado;
 import com.firstcrud.demo.service.EstadoService;
 
 @RestController
-@RequestMapping ("/estado/")
+@RequestMapping ("/estados/")
 public class EstadoREST {
     
     @Autowired

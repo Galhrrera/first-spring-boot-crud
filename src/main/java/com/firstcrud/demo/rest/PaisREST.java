@@ -12,7 +12,7 @@ import com.firstcrud.demo.model.Pais;
 import com.firstcrud.demo.service.PaisService;
 
 @RestController
-@RequestMapping("/pais/")
+@RequestMapping("/paises/")
 public class PaisREST {
 
     @Autowired
