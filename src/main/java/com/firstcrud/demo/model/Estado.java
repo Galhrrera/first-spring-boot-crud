@@ -29,6 +29,10 @@ public class Estado {
         this.pais = pais;
     }
 
+    public Estado(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
