@@ -19,87 +19,85 @@ public class Persona {
     private String apellido;
     private int edad;
 
-    @ManyToOne
-    @JoinColumn (name = "pais-id")
-    private Pais pais;
-    @ManyToOne
-    @JoinColumn (name = "estado-id")
-    private Estado estado;
+    //@ManyToOne
+    //@JoinColumn(name = "pais-id")
+    // private Pais pais;
+    private int pais;
+    //@ManyToOne
+    //@JoinColumn(name = "estado-id")
+    // private Estado estado;
+    private int estado;
 
     public Persona() {
 
     }
 
-    public Persona(String nombre, String apellido, int edad, Pais pais, Estado estado) {
+    public Persona(String nombre, String apellido, int edad, int pais, int estado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.pais = pais;
         this.estado = estado;
     }
-
 
     public int getId() {
         return id;
     }
 
-
     public void setId(int id) {
         this.id = id;
     }
-
 
     public String getNombre() {
         return nombre;
     }
 
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
 
     public String getApellido() {
         return apellido;
     }
 
-
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
 
     public int getEdad() {
         return edad;
     }
 
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
-
-    public Pais getPais() {
+    // public Pais getPais() {
+    // return pais;
+    // }
+    public int getPais() {
         return pais;
     }
 
-
-    public void setPais(Pais pais) {
+    // public void setPais(Pais pais) {
+    // this.pais = pais;
+    // }
+    public void setPais(int pais) {
         this.pais = pais;
     }
 
-
-    public Estado getEstado() {
+    // public Estado getEstado() {
+    // return estado;
+    // }
+    public int getEstado(int estado) {
         return estado;
     }
 
-
-    public void setEstado(Estado estado) {
+    // public void setEstado(Estado estado) {
+    // this.estado = estado;
+    // }
+    public void setEstado(int estado) {
         this.estado = estado;
     }
 
-    
-
-
-    
 }
