@@ -16,15 +16,16 @@ import com.firstcrud.demo.model.Persona;
 import com.firstcrud.demo.repository.PersonaRepository;
 
 @Service
-public class PersonaService implements PersonaRepository{
-    
+public class PersonaService implements PersonaRepository {
+
     @Autowired
     private PersonaRepository personaRepository;
 
     @Override
     public void deleteAllByIdInBatch(Iterable<Long> ids) {
         // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'deleteAllByIdInBatch'");
+        // throw new UnsupportedOperationException("Unimplemented method
+        // 'deleteAllByIdInBatch'");
         personaRepository.deleteAllByIdInBatch(ids);
         return;
     }
@@ -63,7 +64,7 @@ public class PersonaService implements PersonaRepository{
     public Persona getById(Long arg0) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getById'");
-        //return personaRepository.getReferenceById(arg0);
+        // return personaRepository.getReferenceById(arg0);
     }
 
     @Override
@@ -93,7 +94,7 @@ public class PersonaService implements PersonaRepository{
     @Override
     public List<Persona> findAll() {
         // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'findAll'");
+        // throw new UnsupportedOperationException("Unimplemented method 'findAll'");
         return personaRepository.findAll();
     }
 
@@ -101,7 +102,7 @@ public class PersonaService implements PersonaRepository{
     public List<Persona> findAllById(Iterable<Long> ids) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findAllById'");
-        
+
     }
 
     @Override
@@ -119,7 +120,7 @@ public class PersonaService implements PersonaRepository{
     @Override
     public void delete(Persona entity) {
         // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'delete'");
+        // throw new UnsupportedOperationException("Unimplemented method 'delete'");
         try {
             personaRepository.delete(entity);
         } catch (Exception e) {
@@ -148,7 +149,7 @@ public class PersonaService implements PersonaRepository{
     @Override
     public void deleteById(Long id) {
         // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'deleteById'");
+        // throw new UnsupportedOperationException("Unimplemented method 'deleteById'");
         try {
             personaRepository.deleteById(id);
         } catch (Exception e) {
@@ -165,13 +166,15 @@ public class PersonaService implements PersonaRepository{
     @Override
     public Optional<Persona> findById(Long id) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+        // throw new UnsupportedOperationException("Unimplemented method 'findById'");
+
+        return personaRepository.findById(id);
     }
 
     @Override
     public <S extends Persona> S save(S entity) {
         // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'save'");
+        // throw new UnsupportedOperationException("Unimplemented method 'save'");
         return personaRepository.save(entity);
     }
 
