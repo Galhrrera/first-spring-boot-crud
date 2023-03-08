@@ -86,18 +86,28 @@ public class Persona {
         this.pais = pais;
     }
 
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+
+    
+
     // public Estado getEstado() {
     // return estado;
     // }
-    public int getEstado(int estado) {
-        return estado;
-    }
+    // public int getEstado(int estado) {
+    //     return estado;
+    // }
 
     // public void setEstado(Estado estado) {
     // this.estado = estado;
     // }
-    public void setEstado(int estado) {
-        this.estado = estado;
-    }
+    // public void setEstado(int estado) {
+    //     this.estado = estado;
+    // }
 
 }
